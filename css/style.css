@@ -49,12 +49,18 @@ figure {
 }
 
 figure img {
-	width: 40%;
+	width: 100%;
+}
+
+figure.tux {
+	width: 45%;
 }
 
 figcaption, footer {
 	font-size: 0.75em;
 }
+
+
 
 
 
