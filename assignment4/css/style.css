@@ -1,0 +1,97 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	background: rgb(246,211,139);
+	background: radial-gradient(circle, rgba(246,211,139,1) 20%, rgba(181,124,8,1) 83%);
+}
+
+
+#container {
+		/*border:1px solid black;*/
+		width:900px;
+		margin:auto;
+		position:relative;
+		font-family: "Edo SZ", sans-serif;
+}
+
+h1 {
+	position:fixed;
+	bottom:100px;
+	right:100px;
+}
+
+h2 {
+	color:#ffab00;
+}
+
+p.katie {
+	rotate: 90deg;
+	position: relative;
+	right: 120px;
+	top: 400px;
+	font-size:4em;
+	padding:20px;
+}
+
+span.garfield {
+	color:#ffab00;
+	font-size:2em;
+	position: fixed;
+	top:220px;
+	left: 100px;
+	opacity: 0.5;
+	text-shadow:1px 1px black, 2px 2px #806d46;
+	rotate:90deg;
+}
+
+span.d {
+	rotate: 215deg;
+	color:#915e00;
+	text-shadow:15px 150px #7a5206, 30px 300px #5e420c, 45px 450px #423211, 60px 600px #423211, 75px 750px #242019, -15px -150px #a37110, -30px -300px #cf972b, -45px -450px #deab49, -60px -600px #ebbf6c, -75px -750px #f2d399;
+	position: absolute;
+	font-size: 8em;
+	right: 300px;
+	opacity: 0.8;
+}
+
+span.grad {
+	rotate: -35deg;
+	opacity: 0.99;
+	color:#cc9c3b;
+	position: fixed;
+	right: 500px;
+	top: -600px;
+	text-shadow: -2px -2px #403218;
+}
+
+span.period {
+	font-size: 25em;
+	color:#c7ac75;
+	position:absolute;
+	left:150px;
+	top:-25px;
+	opacity: 0.33;
+	rotate: 65deg;
+}
+
+p.source {
+	position: fixed;
+	bottom: 80px;
+}
+
+/* Segoe Script font */
