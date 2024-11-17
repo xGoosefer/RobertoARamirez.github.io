@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Primal Gas</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>Primal Gas</h1>
+<h2>History of CLOUDS</h2>
+</header>
+
+<main>
+
+<p>Long ago, all matters of life lived on the surface of the planet. The ground was natural, lakes and oceans existed for eons, and the skies were cleared by all things except for clouds. During this time, one of the most booming industries were mining and excavation. Beneath the surface lied many useful resources for the people to build or trade with one another. Jon on the other hand had the young naïve mindset at the time to do something revolutionary. Instead of competing with powerful people digging through the ground. He wanted to soar up into the sky.</p>
+
+<p>His radical mind saw opportunity and profits if he could figure out how to let people roam among the clouds. Hence he started CLOUDS as a project to find ways to travel and conquer the skies.</p>
+
+	<button id="txtm">More</button>
+
+<p id="special">After a few years of his endeavors, a crucial point in history emerged. A group of miners, thousands of feet below the surface, found an entrance to a very large underground cavern. Tragically none were able to explore the full contents of the chamber, as upon there being an opening, the cave exuded an unidentified gas. All those near the entrance perished through exposure and only by chance was word able to reach the surface about the gas.</p>
+
+<p id="special">Experts and scientists worked the best they could to find out the following information about the gas.</p>
+
+	<button id="am">MORE</button>
+
+<figure id="lost">
+	<audio controls>
+		<source src="img/FullGasAudio_Mixdown.mp3" type="audio/mpeg">
+		Uh Oh
+	</audio>
+</figure>
+
+	<button id="im">MOREEEE</button>
+
+<figure id="gas">
+	<img src="img/PrinordialGas_Concept.jpg" alt="Rough Sketch">
+	<figcaption>Lost skecth of a man found deep within the mines.</figcaption>
+</figure>
+
+</main>
+
+
+
+  </div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+
+$('p#special').hide();
+$('#lost').hide();
+$('#gas').hide();
+$('#am').hide();
+$('#im').hide();
+
+$('#txtm').click(function() {
+
+	//$('p#special').show();
+	//$('p#special').slideDown(850);
+	$('p#special').slideToggle(850);
+	$('#am').slideToggle(850);
+	//$('p#special').fadeIn(1600);
+
+});//close click txtm function
+
+$('h1').click(function() {
+	
+	$('body').toggleClass('tuesday');//calls the tuesday in style
+	
+});//close click h1
+
+$('#am').click(function() {
+
+	$('#lost').slideToggle(850);
+	$('#im').slideToggle(850);
+	
+});//close click am function
+
+$('#im').click(function() {
+
+	$('#gas').slideToggle(850);
+		
+});//close click im function
+
+
+
+  }); //close .ready()
+</script>
+  
+  
+
+</body>
+	
+</html> 

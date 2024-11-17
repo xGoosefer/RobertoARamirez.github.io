@@ -1,0 +1,89 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background:#08bfc2;
+	
+}
+
+.tuesday {
+	background: black;
+	color: white;
+	font-size:2em;
+	font-family:papyrus, sans-serif;
+}
+
+
+
+#special {
+	background: green;
+}
+
+h1 {
+	cursor: pointer; /*makes the clickable hand show up*/
+}
+
+figure img {
+	width: 50%;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+main, header {
+	padding: 10px;
+}
+
+figure img {
+	width: 65%;
+}
+	
+
+} /* closes 769px+ */
+
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+#container {
+	position:relative;
+	margin:auto;
+	
+}
+
+header {
+	text-align:center;
+}
+
+
+figure img {
+	float: right;
+	width: 50%;
+}
+
+	
+	
+} /* closes 1024px+ */
