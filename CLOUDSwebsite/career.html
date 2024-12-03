@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>CLOUDS.co</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+	
+
+  <div id="container">
+	<h1>CAREER</h1>
+
+	<button id="NavMenue">=</button>
+	
+	<figure id="logo">
+		<img src="img/CLOUDS_Logo.png" alt="CLOUDS logo.">
+	</figure>
+
+	<div id="navigationMenue">
+
+	<input type="button" value="HOME" onclick="redirectToHome()">
+	<input type="button" value="ABOUT" onclick="redirectToAbout()">
+	<input type="button" value="CAREER" onclick="redirectToCareer()">
+	<input type="button" value="RESEARCH" onclick="redirectToResearch()">
+	<input type="button" value="STORE" onclick="redirectToStore()">	
+<script>
+function redirectToHome() {
+	location = "home.html";
+}
+
+function redirectToAbout() {
+	location = "about.html";
+}
+
+function redirectToCareer() {
+	location = "career.html";
+}
+
+function redirectToResearch() {
+	location = "research.html";
+}
+
+function redirectToStore() {
+	location = "store.html";
+}
+</script>
+	</div>
+	
+  	<div id="otherPages">
+		
+		<h2>COME JOIN THE TEAM!</h2>
+
+		<p id="welcome">If you would like to help out in the future of humanity, come in and join CLOUDS. Our industry is booming and the more help we can get, the better. Check out our open positions below!</p>
+
+		<h2>OPENINGS</h2>
+
+		<h3>TBA</h3>
+	</div>
+
+
+  </div><!-- close "container" -->
+  
+<!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+$('#navigationMenue').hide();
+
+
+$('#NavMenue').click(function() {
+
+	$('#navigationMenue').slideToggle(850);
+
+});//close click NavMenue function
+
+});
+</script>
+
+
+</body>
+	
+</html> 

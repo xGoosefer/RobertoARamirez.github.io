@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>CLOUDS.co</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+	
+
+  <div id="container">
+	<h1>ABOUT</h1>
+
+	<button id="NavMenue">=</button>
+
+	<figure id="logo">
+		<img src="img/CLOUDS_Logo.png" alt="CLOUDS logo.">
+	</figure>
+	
+	<div id="navigationMenue">
+
+	<input type="button" value="HOME" onclick="redirectToHome()">
+	<input type="button" value="ABOUT" onclick="redirectToAbout()">
+	<input type="button" value="CAREER" onclick="redirectToCareer()">
+	<input type="button" value="RESEARCH" onclick="redirectToResearch()">
+	<input type="button" value="STORE" onclick="redirectToStore()">	
+<script>
+function redirectToHome() {
+	location = "home.html";
+}
+
+function redirectToAbout() {
+	location = "about.html";
+}
+
+function redirectToCareer() {
+	location = "career.html";
+}
+
+function redirectToResearch() {
+	location = "research.html";
+}
+
+function redirectToStore() {
+	location = "store.html";
+}
+</script>
+	</div>
+	
+  	<div id="otherPages">
+		<h2>WHO ARE WE?</h2>
+
+		<p id="welcome">If you are unaware, CLOUDS, also known as Concentrated Lumps of Unaging Durable Surfaces, is a Company founded by our CEO, Jon Carter. Our goal is to create a giant mass of concentrated clouds so that humans and all other lives can venture and inhabit the skies. We have a vision of seeing cities floating in the sky and entire neighborhoods or even countries to allow for more surface area for people to live.</p>
+		
+		<p>The company was kickstarted in the house of Jon Carter. Starting as a young entrepreneur, Jon Carter had garnered enough support through his work and deals to create his company. After 6 years of experience in the business world, Jon Carter finally decided to pursue his life long dream of inhabiting the skies.</p>
+
+		<p>4 years, 20 backing countries, and billions of supporters later, CLOUDS is now one of the largest companies on the planet. CLOUDS lives and breathes to creating these concentrated clouds and use their efforts to make the world a better place.</p>
+
+		<h2>FOR EVERYONE</h2>
+
+		<p id="welcome">As we work on our endeavors, we do so in memory of everyone who hadn’t gotten the chance to see this new future. Especially, our hearts go out to the miners whose lives were lost in the tragic incident in Osei. We understand that most of the support we get is due to the looming threat of the unknown gas that was found during that tragic incident. We would be lying if we didn’t feel the pressure of the world as we work, but in a way, the same amount of positive support we have gotten from the masses work just as well to keep us motivated and work even harder.</p>
+
+		<h2>OUR PROMISE</h2>
+
+		<p id="welcome">Thank you so much for spending your time to learn about CLOUDS and what our goals are for the future. We promise that this route will better humanity. And if in the future who knows. Maybe we can be able to inhabit more than just the skies and the surface. Maybe we can go even further beyond.</p>
+
+
+	</div>
+
+
+  </div><!-- close "container" -->
+  
+<!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+$('#navigationMenue').hide();
+
+
+$('#NavMenue').click(function() {
+
+	$('#navigationMenue').slideToggle(850);
+
+});//close click NavMenue function
+
+});
+</script>
+
+
+</body>
+	
+</html> 

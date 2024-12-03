@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>CLOUDS.co</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+	
+
+  <div id="container">
+	<h1>RESEARCH</h1>
+
+	<button id="NavMenue">=</button>
+	
+	<figure id="logo">
+		<img src="img/CLOUDS_Logo.png" alt="CLOUDS logo.">
+	</figure>
+
+	<div id="navigationMenue">
+
+	<input type="button" value="HOME" onclick="redirectToHome()">
+	<input type="button" value="ABOUT" onclick="redirectToAbout()">
+	<input type="button" value="CAREER" onclick="redirectToCareer()">
+	<input type="button" value="RESEARCH" onclick="redirectToResearch()">
+	<input type="button" value="STORE" onclick="redirectToStore()">	
+<script>
+function redirectToHome() {
+	location = "home.html";
+}
+
+function redirectToAbout() {
+	location = "about.html";
+}
+
+function redirectToCareer() {
+	location = "career.html";
+}
+
+function redirectToResearch() {
+	location = "research.html";
+}
+
+function redirectToStore() {
+	location = "store.html";
+}
+</script>
+	</div>
+	
+  	<div id="otherPages">
+		
+		<h2>THE SKYWARD DEVICE</h2>
+
+		<p id="welcome">The hardest part about reaching our goal is the creation of these concentrated clouds. We have worked day in and day out to create these long lasting clouds following this <a href="https://www.weather.gov/source/zhu/ZHU_Training_Page/clouds/cloud_development/clouds.htm#:~:text=Clouds%20form%20when%20the%20invisible,a%20liquid%20or%20solid%20form." target="_blank">guide.</a> Our current solution to this problem is a new device we have created. Currently we call it project Skyward. We have created a mechanism that will keep our clouds everlasting. It’s design to control the temperature around it up to a radius of five miles. The device alone is able to hover in the air using strong turbines. Lastly it has a very powerful gravitational pull, using the valuable resource known as alomonium. It causes project Skyward to continuously spin in place, allowing itself to extrude enough gravitational force to maintain the shape of the clouds by keeping the water particles in the air very close together. This is how we have been able to create such dense clouds. The mixture of increasing the size of water particles, and condensing them in such small places allows for us to create a strong enough surface to be able to hold other solid structures on top of it. Currently, project Skyward seems to have a lifespan of about three years before needing a replacement. We will have to conduct a plan on how we are to go about replacing the devices when the time comes. Currently it seems safe enough to deploy the new device next to the old one to avoid any type of collapse with the cloud. We only hope this method continues to work as the devices become powerful in the future.</p>
+
+		<figure id="SD">
+			<img src="img/Skyward_Device.jpg" alt="The spherical skyward device with alomonium within it.">
+		</figure>
+
+		<h2>PARTNERS WITH PEARL</h2>
+
+		<p>In order to obtain alomonium, we have decided to partner up with Pearl Mining Company. They have agreed to help us indefinitely and even in the future as we move to the skies. In preparation for that time, we have been working on a contraption to allow for travel in the air back down to the ground in a safely manner. The dangers we have with this travel is finding ways to keep the passengers safe during travel from the difference in air pressure, and what is the most efficient way to transport materials from the ground, up to thousands of feet in the air. We have been working on creating large vertical pipelines for transportation of materials. It is the quickest way to receive materials from the surface and does not require constant transportation of personnel to deliver. We will also be able to incorporate <a href="https://pipeline101.org/topic/pipeline-transportation-and-batching/#:~:text=What%20is%20batching,to%20point%20B." target="_blank">batching</a> to help reduce the number of pipelines needed to make. When dealing with transportation of personnel, we have decided on making long shafts similar to elevators. We have incorporated many safety measures and pressure control in the elevator system. The elevator being made will have a current speed of traveling at 45mph. This will allow us to make sure our personnel don’t have to spend too much time traveling to the surface.</p>
+
+		<h2>DEALING WITH THE GAS</h2>
+
+		<audio controls>
+			<source src="audio/FullGasAudio_Mixdown.mp3" type="audio/mpeg">
+			Uh Oh
+		</audio>
+
+		<p>Lastly, we are aware that in due time, the entire surface of the planet will be covered in the unknown gas. We are working hand in hand with scientist from Bourne University who have been working nonstop since the incident in learning everything we can about the gas. What we have figured out are safety precautions we can take to avoid the gas entering the body. We are making special hazardous suits to protect the entire body from letting any gas in. We also have the highest graded masks to allow protection from outside air, while being connected to an oxygen tank to allow them to breath and for an estimated 8 hours so they can perform their shift uninterrupted. The gas at it’s lowest level has a density of around 3 kg/cubic meter. This isn’t that dangerous with the equipment provided. There are however very dangerous levels where at it’s most dense, at least that recorded, has been around 13 kg/cubic meter. It is recommended for all personnel not to enter areas with a recorded density over 7 kg/cubic meter.</p>
+
+		<figure id="gas">
+			<img src="img/PrimordialGas_Concept.jpg" alt="Sketch found on teh body of a dead miner.">
+		</figure>
+
+	</div>
+
+
+  </div><!-- close "container" -->
+  
+<!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+$('#navigationMenue').hide();
+
+
+$('#NavMenue').click(function() {
+
+	$('#navigationMenue').slideToggle(850);
+
+});//close click NavMenue function
+
+});
+</script>
+
+
+</body>
+	
+</html> 

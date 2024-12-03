@@ -1,0 +1,307 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+	color: #ffffff;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background: rgb(0,152,136);
+	background: linear-gradient(rgba(15,55,164,1) 20%, rgba(0,152,136,1) 100%);
+}
+
+#container {
+	margin:auto;
+}
+
+#homeLogo {
+	margin: auto;
+	padding: 10px;
+	max-width: 500px;
+}
+
+#otherPages {
+	margin: auto;
+	padding: 10px;
+	max-width: 500px;
+	padding-top: 100px;
+}
+
+h1 {
+	color: rgba(0,0,0,0);
+	text-shadow:0px 8px #ffffff, 1px 10px #777777;
+	background: rgb(177,181,184);
+	font-size: 2.5em;
+	width:100%;
+	height: 1em;
+	top: 10px;
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+	border-bottom-left-radius: 0.25em;
+	border-bottom-right-radius: 0.25em;
+	text-align:center;
+	position:fixed;
+	
+}
+
+#NavMenue {
+	background: rgb(8,93,157);
+	width: 45px;
+	height: 35px;
+	top: 40px;
+	left: 10px;
+	position:fixed;
+}
+
+#navigationMenue {
+	background: rgba(8,93,157,0.8);
+	margin: left;
+	padding: 10px;
+	max-width: 500px;
+	position: fixed;
+	top: 40px;
+	line-height: 4em;
+}
+
+input {
+	width: 70%;
+	height: 30px;
+	/*padding: 10px;*/
+}
+
+figure img {
+	width: 100%;
+	padding-top: 90px;
+
+}
+
+#logo {
+	width: 40px;
+	padding-top: 0px;
+	position: absolute;
+	right: -20px;
+	top: -68px;
+	position:fixed;
+}
+
+h2 {
+	color: rgba(0,0,0,1);
+	background: rgb(177,181,184);
+	width:100%;
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+	border-bottom-left-radius: 0.25em;
+	border-bottom-right-radius: 0.25em;
+	text-align:center;
+}
+
+h3 {
+	color: rgba(0,0,0,1);
+	background: rgb(177,181,184);
+	width:100%;
+	text-align:center;
+	
+}
+
+h4 {
+	color: rgba(0,0,0,1);
+	background: rgb(177,181,184);
+	width:100%;
+	font-size: 2em;
+	height: 2em;
+	line-height: 2em;
+	
+}
+
+#SD {
+	margin: auto;
+	padding: 0px;
+	max-width: 450px;
+}
+
+#gas {
+	margin: auto;
+	padding: 0px;
+	max-width: 350px;
+}
+
+#feat1 {
+	max-width: 100px;
+	float: left;
+	padding-top: -50px;
+}
+
+#feat2 {
+	max-width: 100px;
+	float: right;
+	padding-top: -50px;
+}
+
+section#reserves {
+	padding-top:300px;
+}
+
+p#costs {
+	max-width: 300px;
+	left: 30%;
+	bottom: 200px;
+	position:absolute;
+}
+
+p#plan {
+	max-width: 350px;
+	left: 30%;
+	bottom: 170px;
+	position:absolute;
+}
+
+p#call {
+	max-width: 350px;
+	left: 30%;
+	bottom: 70px;
+	position:absolute;
+}
+
+p#welcome {
+	margin: auto;
+	padding: 10px;
+	max-width: 500px;
+
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+h4 {
+	color: white;
+}
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+#homeLogo {
+	padding: 5px;
+	max-width: 450px;
+}
+
+
+h1 {
+	margin: auto;
+	color: white;
+	line-height: 1em;
+	font-size: 2em;
+	top: 0px;
+	text-shadow:0px 0px rgba(0,0,0,0),  1px 2px #777777;
+}
+
+ul {
+
+}
+
+	
+#NavMenue {
+	left: -200px;
+}
+
+p#welcome {
+	padding-top: 0px;
+	max-width: 700px;
+	margin: auto;
+}
+
+h1#deskNav {
+	margin:auto;
+	color: white;
+	font-size: 1.5em;
+	height: 1em;
+	left: 100px;
+	text-align:center;
+	position:fixed;
+	background: rgba(0,0,0,0);
+	
+}
+
+h1#deskNavAbt {
+	margin:auto;
+	color: white;
+	font-size: 1.5em;
+	height: 1em;
+	width: 10%;
+	left: 55%;
+	text-align:center;
+	position:fixed;
+	background: rgba(0,0,0,0);
+	
+}
+
+h1#deskNavRes {
+	margin:auto;
+	color: white;
+	font-size: 1.5em;
+	height: 1em;
+	width: 10%;
+	left: 67%;
+	text-align:center;
+	position:fixed;
+	background: rgba(0,0,0,0);
+	
+}
+
+h1#deskNavCar {
+	margin:auto;
+	color: white;
+	font-size: 1.5em;
+	height: 1em;
+	width: 10%;
+	left: 80%;
+	text-align:center;
+	position:fixed;
+	background: rgba(0,0,0,0);
+	
+}
+
+h1#deskNavStore {
+	margin:auto;
+	color: white;
+	font-size: 1.5em;
+	height: 1em;
+	width: 10%;
+	left: 90%;
+	text-align:center;
+	position:fixed;
+	background: rgba(0,0,0,0);
+	
+}
+
+
+
+	
+} /* closes 1024px+ */
+
+
+
