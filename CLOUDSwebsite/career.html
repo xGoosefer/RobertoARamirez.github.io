@@ -21,6 +21,12 @@
 
   <div id="container">
 	<h1>CAREER</h1>
+	<h1 id="deskNavHome">HOME</h1>
+	<h1 id="deskNavAbt">ABOUT</h1>
+	<h1 id="deskNavRes">RESEARCH</h1>
+	<h1 id="deskNavCar">CAREER</h1>
+	<h1 id="deskNavStore">STORE</h1>
+	<h1 id="title">CLOUDS</h1>
 
 	<button id="NavMenue">=</button>
 	
@@ -58,16 +64,44 @@ function redirectToStore() {
 </script>
 	</div>
 	
-  	<div id="otherPages">
+  	<div id="carPage">
 		
 		<h2>COME JOIN THE TEAM!</h2>
 
 		<p id="welcome">If you would like to help out in the future of humanity, come in and join CLOUDS. Our industry is booming and the more help we can get, the better. Check out our open positions below!</p>
 
-		<h2>OPENINGS</h2>
+		<h2 id="gasH">OPENINGS</h2>
 
-		<h3>TBA</h3>
+		
+		<nav>
+			<ul>
+				<li>
+					<h3>Outsource Manager</h3>
+				</li>
+				<li>
+					<h3>Asset Production Manager</h3>
+				</li>
+				<li>
+					<h3>Community & Social Media Manager</h3>
+				</li>
+				<li>
+					<h3>Supervisory General Engineer</h3>
+				</li>
+			</ul>
+		</nav>
 	</div>
+	
+	<footer>
+		<p>&#169; Roberto A. Ramirez <span id="year"></span></p>
+	</footer>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
 
 
   </div><!-- close "container" -->
@@ -77,7 +111,8 @@ function redirectToStore() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
-  $(document).ready(function() {
+document.getElementById("year").innerHTML = new Date().getFullYear(); //get cuurent year 
+ $(document).ready(function() {
 
 $('#navigationMenue').hide();
 
@@ -87,6 +122,27 @@ $('#NavMenue').click(function() {
 	$('#navigationMenue').slideToggle(850);
 
 });//close click NavMenue function
+
+$('h1').click(function redirectToHome() {
+	location = "home.html";
+});
+
+$('h1#deskNavAbt').click(function redirectToAbout() {
+	location = "about.html";
+});
+
+$('h1#deskNavCar').click(function redirectToCareer() {
+	location = "career.html";
+});
+
+$('h1#deskNavRes').click(function redirectToResearch() {
+	location = "research.html";
+});
+
+$('h1#deskNavStore').click(function redirectToStore() {
+	location = "store.html";
+});
+
 
 });
 </script>

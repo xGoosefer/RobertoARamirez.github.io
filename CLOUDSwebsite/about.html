@@ -15,12 +15,18 @@
 </head>
 
 
-<body>
+<body id="abtBod">
 
 	
 
   <div id="container">
 	<h1>ABOUT</h1>
+	<h1 id="deskNavHome">HOME</h1>
+	<h1 id="deskNavAbt">ABOUT</h1>
+	<h1 id="deskNavRes">RESEARCH</h1>
+	<h1 id="deskNavCar">CAREER</h1>
+	<h1 id="deskNavStore">STORE</h1>
+	<h1 id="title">CLOUDS</h1>
 
 	<button id="NavMenue">=</button>
 
@@ -61,7 +67,7 @@ function redirectToStore() {
   	<div id="otherPages">
 		<h2>WHO ARE WE?</h2>
 
-		<p id="welcome">If you are unaware, CLOUDS, also known as Concentrated Lumps of Unaging Durable Surfaces, is a Company founded by our CEO, Jon Carter. Our goal is to create a giant mass of concentrated clouds so that humans and all other lives can venture and inhabit the skies. We have a vision of seeing cities floating in the sky and entire neighborhoods or even countries to allow for more surface area for people to live.</p>
+		<p>If you are unaware, CLOUDS, also known as Concentrated Lumps of Unaging Durable Surfaces, is a Company founded by our CEO, Jon Carter. Our goal is to create a giant mass of concentrated clouds so that humans and all other lives can venture and inhabit the skies. We have a vision of seeing cities floating in the sky and entire neighborhoods or even countries to allow for more surface area for people to live.</p>
 		
 		<p>The company was kickstarted in the house of Jon Carter. Starting as a young entrepreneur, Jon Carter had garnered enough support through his work and deals to create his company. After 6 years of experience in the business world, Jon Carter finally decided to pursue his life long dream of inhabiting the skies.</p>
 
@@ -69,15 +75,22 @@ function redirectToStore() {
 
 		<h2>FOR EVERYONE</h2>
 
-		<p id="welcome">As we work on our endeavors, we do so in memory of everyone who hadn’t gotten the chance to see this new future. Especially, our hearts go out to the miners whose lives were lost in the tragic incident in Osei. We understand that most of the support we get is due to the looming threat of the unknown gas that was found during that tragic incident. We would be lying if we didn’t feel the pressure of the world as we work, but in a way, the same amount of positive support we have gotten from the masses work just as well to keep us motivated and work even harder.</p>
+		<p>As we work on our endeavors, we do so in memory of everyone who hadn’t gotten the chance to see this new future. Especially, our hearts go out to the miners whose lives were lost in the tragic incident in Osei. We understand that most of the support we get is due to the looming threat of the unknown gas that was found during that tragic incident. We would be lying if we didn’t feel the pressure of the world as we work, but in a way, the same amount of positive support we have gotten from the masses work just as well to keep us motivated and work even harder.</p>
 
 		<h2>OUR PROMISE</h2>
 
-		<p id="welcome">Thank you so much for spending your time to learn about CLOUDS and what our goals are for the future. We promise that this route will better humanity. And if in the future who knows. Maybe we can be able to inhabit more than just the skies and the surface. Maybe we can go even further beyond.</p>
+		<p>Thank you so much for spending your time to learn about CLOUDS and what our goals are for the future. We promise that this route will better humanity. And if in the future who knows. Maybe we can be able to inhabit more than just the skies and the surface. Maybe we can go even further beyond.</p>
 
 
 	</div>
 
+	<footer>
+		<p>&#169; Roberto A. Ramirez <span id="year"></span></p>
+	</footer>
+
+	<br></br>
+	<br></br>
+	<br></br>
 
   </div><!-- close "container" -->
   
@@ -86,6 +99,8 @@ function redirectToStore() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
+document.getElementById("year").innerHTML = new Date().getFullYear(); //get cuurent year 
+
   $(document).ready(function() {
 
 $('#navigationMenue').hide();
@@ -96,6 +111,26 @@ $('#NavMenue').click(function() {
 	$('#navigationMenue').slideToggle(850);
 
 });//close click NavMenue function
+
+$('h1').click(function redirectToHome() {
+	location = "home.html";
+});
+
+$('h1#deskNavAbt').click(function redirectToAbout() {
+	location = "about.html";
+});
+
+$('h1#deskNavCar').click(function redirectToCareer() {
+	location = "career.html";
+});
+
+$('h1#deskNavRes').click(function redirectToResearch() {
+	location = "research.html";
+});
+
+$('h1#deskNavStore').click(function redirectToStore() {
+	location = "store.html";
+});
 
 });
 </script>

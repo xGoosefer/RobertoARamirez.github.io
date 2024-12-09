@@ -21,6 +21,12 @@
 
   <div id="container">
 	<h1>STORE</h1>
+	<h1 id="deskNavHome">HOME</h1>
+	<h1 id="deskNavAbt">ABOUT</h1>
+	<h1 id="deskNavRes">RESEARCH</h1>
+	<h1 id="deskNavCar">CAREER</h1>
+	<h1 id="deskNavStore">STORE</h1>
+	<h1 id="title">CLOUDS</h1>
 
 	<button id="NavMenue">=</button>
 	
@@ -65,11 +71,13 @@ function redirectToStore() {
 		<p id="welcome">If you would like to support us in any other way, consider buying the CLOUDS mascot plushie for your personal use. If you would like to reserve yourself a piece of land in the future, look at our rates below and find the best one suited for you!</p>
 
 		<figure id="feat1">
-			<img src="img/PlaceholderImg01.png" alt="Sketch.">
+			<img src="img/mascotPlush.png" alt="Sketch.">
+			<figcaption>Design made by Roberto A. Ramirez.</figcaption>
 		</figure>
 
 		<figure id="feat2">
-			<img src="img/PlaceholderImg02.png" alt="Sketch.">
+			<img src="img/pin.png" alt="Sketch.">
+			<figcaption>Design made by Roberto A. Ramirez.</figcaption>
 		</figure>
 
 		<section id="reserves">
@@ -86,6 +94,10 @@ function redirectToStore() {
 
 	</div>
 
+	<footer>
+		<p>&#169; Roberto A. Ramirez <span id="year"></span></p>
+	</footer>
+	<br></br>
 
   </div><!-- close "container" -->
   
@@ -94,6 +106,8 @@ function redirectToStore() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
+document.getElementById("year").innerHTML = new Date().getFullYear(); //get cuurent year 
+
   $(document).ready(function() {
 
 $('#navigationMenue').hide();
@@ -104,6 +118,27 @@ $('#NavMenue').click(function() {
 	$('#navigationMenue').slideToggle(850);
 
 });//close click NavMenue function
+
+$('h1').click(function redirectToHome() {
+	location = "home.html";
+});
+
+$('h1#deskNavAbt').click(function redirectToAbout() {
+	location = "about.html";
+});
+
+$('h1#deskNavCar').click(function redirectToCareer() {
+	location = "career.html";
+});
+
+$('h1#deskNavRes').click(function redirectToResearch() {
+	location = "research.html";
+});
+
+$('h1#deskNavStore').click(function redirectToStore() {
+	location = "store.html";
+});
+
 
 });
 </script>
