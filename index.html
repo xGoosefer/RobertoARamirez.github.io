@@ -24,10 +24,10 @@
 
 	<nav>
 		<ul>
-			<li><a href="index.html">Home</a></li>
 			<li><a href="bio.html">Biography</a></li>
-			<li><a href="assignments.html">Assignments</a></li>
-			<li><a href="final-project.html">Final Project</a></li>
+			<li><a href="assignments.html">Web Development Practice</a></li>
+			<li><a href="final-project.html">Fake Website Prototype</a></li>
+			<li><a href="prog.html">Programming Portfolio</a></li>
 		</ul>
 	</nav>
 	
@@ -40,11 +40,36 @@
 		<p>
 			Welcome to this random page!
 		</p>
+		
+		<script>
+			function hola() {
+				//document.write("What is up? I am javascript!");
+				alert("The flesh demands invitation. :P");
+			} //close alert
+			
+			function chngBg() {
+				document.body.style.background = "#BA711D";
+			} // close bg
+			
+			
+		</script>
+		
+		<button onclick="hola()">
+			Will You Press Me?
+		</button>
+		
+		<button onclick="chngBg()">
+			Color Transform!
+		</button>
 	</main>
 	
 	<footer>
-		<p>&#169;Roberto A. Ramirez 2024</p>
+		<p>&#169;Roberto A. Ramirez <span id="year"></span></p>
 	</footer>
+	
+	<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear(); //get cuurent year
+		</script>
 
   </div><!-- close "container" -->
   
