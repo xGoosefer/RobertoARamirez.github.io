@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>The Coolest Webpage Ever</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+	<header>
+		<h1> Roberto A. Ramirez </h1>
+		<h2> Wrtiting Samples </h2>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bio.html">Biography</a></li>
+			<li><a href="gameDesign.html">Game Design Portfolio</a></li>
+			<li><a href="assignments.html">Web Development Practice</a></li>
+			<li><a href="final-project.html">Fake Website Prototype</a></li>
+			<li><a href="prog.html">Programming Portfolio</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+				
+		<p>
+			Here is a list of Short Storis, Scripts and expansion on dreams. If anything catches your eye, feel free to read some of it!
+		</p>
+
+		<h2> Flicker </h2>
+		<p>
+			"He brought his head back down to look forward, now opening his eyes, but in front of him lay a wall of television-like static that expanded infinitely in all directions as if it was a two-dimensional plane."
+			<button id="RM_F">Read More</button>
+		</p>
+		<figure id="Fpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/Flicker.pdf"></embed>
+		</figure>
+
+
+
+		<h2> Coral Death Ball </h2>
+		<p>
+			"One jumps in the water, the fresh sunscreen comes off, another jumps in, his oily fingers touch, waste dumps in and it collides. All of these things touch the precious and beloved coral at the bottom of the water, and all of these things wither away at its life."
+			<button id="RM">Read More</button>
+		</p>
+		<figure id="CDBpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/CoralDeathBall.pdf"></embed>
+		</figure>
+		
+		<h2> Half Shell Origin: Village Outlaw </h2>
+		<p>
+			"The agent was looking out the window to his left, his sunglasses shielding him from the bright late afternoon sun behind the house that he could see across the street. He took a sip of his coffee as he examined the house. The main reason he was called out here in the first place."
+			<button id="RM_VO">Read More</button>
+		</p>
+		<figure id="VOpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/VillageOutlaw.pdf"></embed>
+		</figure>
+		
+
+		<h2> The Gluteus Maximus </h2>
+		<p>
+			"The most exciting and libidinous thing happened in Chicago on July 10. A package was delivered to a doorstep around eight in the summer morning. Opening the door was, Anthony Anola, in his excited glee, he grabbed the package and brought it inside its new home. His manager, Favola Furencious, walked into the room with his steaming hot coffee in his hands."
+			<button id="RM_GM">Read More</button>
+		</p>
+		<figure id="GMpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/GluteusMax.pdf"></embed>
+		</figure>
+
+		<h2> Sever Threads </h2>
+		<p>
+			"She steps up to her wagon, where her Ox is attached to, and places the creature’s corpse on the wagon. Dusting herself off, she hops onto the seat of her wagon, placing her spear behind her, and readying her Ox to begin moving down the nearby trail."
+			<button id="RM_SV">Read More</button>
+		</p>
+		<figure id="SVpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/SeverThreads.pdf"></embed>
+		</figure>
+
+
+		<h2> Skyward Exodus </h2>
+		<p>
+			"She’s happy it’s her because she didn’t need to be socially awkward like she does to every other customer that comes in, even though she takes all the orders. The coffee shop where Clementine works is in the sky. Smack in the south side of the big City, Kei. "
+			<button id="RM_SE">Read More</button>
+		</p>
+		<figure id="SEpdf">
+			<embed style="height: 100vh; width: 100%;" src="img/SkywardExodus.pdf"></embed>
+		</figure>
+
+		
+			
+	</main>
+	
+	<footer>
+		<p>&#169;Roberto A. Ramirez, 2026 <span id="year"></span></p>
+	</footer>
+	
+	
+  </div><!-- close "container" -->
+   <!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+$('#Fpdf').hide();
+$('#CDBpdf').hide();
+$('#VOpdf').hide();
+$('#GMpdf').hide();
+$('#SVpdf').hide();
+$('#SEpdf').hide();
+
+$('#RM_F').click(function() {
+
+	//$('#Fpdf').show();
+	$('#Fpdf').slideToggle(850);
+	
+});//close click txtm function
+
+$('#RM').click(function() {
+
+	//$('#CDBpdf').show();
+	$('#CDBpdf').slideToggle(850);
+	
+});//close click txtm function
+
+$('#RM_VO').click(function() {
+
+	//$('#VOpdf').show();
+	$('#VOpdf').slideToggle(850);
+	
+});//close click txtm function
+
+$('#RM_GM').click(function() {
+
+	//$('#GMpdf').show();
+	$('#GMpdf').slideToggle(850);
+	
+});//close click txtm function
+
+
+$('#RM_SV').click(function() {
+
+	//$('#SVpdf').show();
+	$('#SVpdf').slideToggle(850);
+	
+});//close click txtm function
+
+
+$('#RM_SE').click(function() {
+
+	//$('#SEpdf').show();
+	$('#SEpdf').slideToggle(850);
+	
+});//close click txtm function
+
+
+
+
+  }); //close .ready()
+
+</script>
+
+</body>
+	
+</html> 

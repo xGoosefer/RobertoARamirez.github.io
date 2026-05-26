@@ -71,6 +71,10 @@ figcaption, footer {
 	padding-right: 25%;
 }
 
+img {
+	width: 100%
+}
+
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 
